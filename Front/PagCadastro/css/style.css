@@ -1,0 +1,182 @@
+@font-face {font-family: "BillabongW00-Regular"; src:
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot"); src:
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.svg#BillabongW00-Regular") format("svg");}
+
+*{ 
+box-sizing: border-box; 
+margin: 0; 
+padding: 0; 
+outline: none; 
+text-decoration: none; 
+text-decoration: none;
+}
+:root{ 
+    --background: #FAFAFA;
+    --titleFont: 'BillabongW00-Regular', serif;
+}
+main{ 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: var(--background); 
+}
+.form-section{ 
+    width: 350px; 
+    height: 684px; 
+}
+.box-main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dddcdc;
+    
+}
+.title img{ 
+    width: 200px;
+    height: 55px;
+    margin: 25px auto 20px;
+}
+ 
+.pre-form{
+    margin-bottom: 1em;
+}
+.pre-form p{
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #8e8e8e;
+}
+.buttondiv{
+    margin-top: 8px;
+}
+.input{ 
+    width: 100%; 
+    height: 40px; 
+    margin-bottom: 10px; 
+    background-color: #FAFAFA; 
+    border: 1px solid #EFEFEF; 
+    font-size: 13px; 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+    border-radius: 3px; 
+    padding: 10px; 
+}
+.input:focus{ 
+    border: 1px solid #B2B2B2; 
+}
+.register-btn{ 
+    width: 300px; 
+    height: 35px; 
+    font-family: 'Segoe UI', Tahoma, Verdana, serif; 
+    font-weight: bolder;
+    font-size: 15px;
+    color: #FFFFFF; 
+    margin-bottom: 1em; 
+    border: 0;
+    border-radius: 6px;
+    background-color: #45b1fd; 
+    transition: ease-in-out;
+}
+.register-btn:hover{
+    background-color: #226697;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+.register-btn:focus{
+    background-color: #32a0ee;
+    animation-duration: 0ms;
+}
+.pos-form{
+    margin-top: 10px;
+}
+.pos-form p{
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #AFAFAF;
+}
+.pos-form a{
+    font-weight: bolder;
+    color: #9b9b9b;
+}
+.pos-form a:hover{
+    color: #777777;
+}
+.extra-section{
+    margin-top: 1em;
+    width: 350px;
+    height: 200px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.connect{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dddcdc;
+}
+.connect a{
+    color: #2686CC;
+}
+.connect a:hover{
+    text-decoration: underline;
+}
+.app{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.images-app{
+    margin-top: 20px;
+}
+.footer{
+    bottom: 0;
+    height: 2.5rem;
+}
+  
+.footer ul{
+    text-align: center;
+}
+.footer ul li{
+    display: inline;
+    margin-right: 5px;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 12px; 
+    color: #00376b;
+    font-family: 'billabong', sans-serif;
+}
+  
+.footer p{
+    margin: 10px 0;
+    text-align: center;
+    color: #8e9096;
+    font-size: 14px;
+    font-family: 'billabong', sans-serif;
+}
+.footer4{
+text-decoration: #8e8e8e;
+}
+
+
+  
