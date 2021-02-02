@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border-bottom: 1px solid;
+    border-color: rgb(238, 237, 237);
+}
+.menu{
+    width: 935px;
+    height: 45px;
+    background-color: white;
+    margin: auto;
+    border-bottom: 1px solid;
+    border-color: rgb(238, 237, 237);
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px; 
+}
+.pesquisa{
+    width: 15px;
+    height: 22px;
+    margin: auto;
+    padding-right: 15px;
+}
+.botoes{
+    width: 240px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+/* Fim do Header */
+
+.perfil{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+.bloco-perfil{
+    width: 935px;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    border-bottom: 1px solid;
+    border-color: rgb(226, 224, 224);
+}
+.bloco-perfil ul{
+    display: flex;
+    padding-top: 10px;
+}
+.imagem-perfil{
+    padding-left: 65px;
+    padding-top: 15px;
+}
+.info{
+    padding-left: 100px;
+    flex-direction: column;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;  
+}
+h2{
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bolder;  
+}
+h4{
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bolder; 
+}
+.quantia{ 
+    width: 380px;
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+}
+.topper{
+    justify-content: space-between;
+    display: flex;
+}
+.topper a{
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration-line: none;
+    color: rgba(90, 90, 224, 0.795);
+}
+.hbotao{
+    justify-content: space-between;
+    display: flex;
+}
+.hbotao a{
+    padding-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #2686CC;
+    text-decoration-line: none;
+}
+/* Fim do Perfil exibido */
+
+.pubs{
+    width: 935;
+    height: 60px;
+    margin: auto;
+    background-color: white;
+}
+.publicacao{
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    margin: auto; 
+    align-items: center;
+    display: flex;
+    padding-top: 2px;
+}
+.publicacao img{
+    width: 13px;
+    height: 13px;
+}
+.publicacao h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.posts{
+    width: 100%;
+    height: 1400px;
+    background-color: white;
+}
+.area{
+    width: 935px;
+    height: 100%;
+    /* background-color: coral; */
+    margin: auto;
+}
+.post-card{
+    width: 935px;
+    height: 404px;
+    justify-content: space-between;
+    display: flex;
+}
+.coment-part{
+    width: 505px;
+    height: 404px;
+    /* background-color: bisque; */
+}
+.perfil-coment{
+    width: 300px;
+    height: 100px;
+    /* background-color: cadetblue; */
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+}
+.nom{
+    padding-left: 30px;
+    padding-top: 12px;
+}
+.nom h3{
+    font-family: 'Roboto', sans-serif;
+}
+.nom p{
+    font-family: 'Roboto', sans-serif;
+}
+.icons-coment{
+    width: 130px;
+    height: 60px;
+    /* background-color: white; */
+    justify-content: space-around;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.icons-coment img{
+    width: 25px;
+    height: 23px;
+}
+.curtida{
+    padding-left: 50px;
+    font-size: 13px;
+}
+.coments{
+    width: 505px;
+    height: 227px;
+    /* background-color: teal; */
+    padding-top: 25px;
+}
+.chat1{
+    display: flex;
+}
+.chat1 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-left: 50px;
+}
+.chat1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+.chat1 img{
+    padding-left: 200px;
+    height: 15px;
+}
+.chat2{
+    display: flex;
+    padding-top: 10px;
+}
+.chat2 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-left: 50px;
+}
+.chat2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+.chat2 img{
+    padding-left: 285px;
+    height: 15px;
+}
+.chat3{
+    display: flex;
+    padding-top: 10px;
+}
+.chat3 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-left: 50px;
+}
+.chat3 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+.chat3 img{
+    padding-left: 55px;
+    height: 15px;
+}
+.chat4{
+    display: flex;
+    padding-top: 10px;
+}
+.chat4 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-left: 50px;
+}
+.chat4 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+}
+.chat4 img{
+    padding-left: 283px;
+    height: 15px;
+}
+.mais-coments{
+    padding-left: 50px;
+    padding-top: 45px;
+}
+.mais-coments a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #909090;
+    text-decoration-line: none;
+}
+.espaco{
+    height: 50px;
+}
