@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using instadev.Models;
 
 namespace instadev.Interface
@@ -5,9 +6,9 @@ namespace instadev.Interface
     public interface IPublicacao
     {
         void CriarPublicacao(Publicacao publicacao);
-        void ListarPublicacoes();
+        List<Publicacao> ListarPublicacoes();
         void EditarPublicacao(Publicacao publicacao);
         void ExcluirPublicacao(int id);
-        void Curtir(int id);
+        void Curtir(int IdUsuarioAtual, int idAutor, int IdPublicacao);
     }
 }

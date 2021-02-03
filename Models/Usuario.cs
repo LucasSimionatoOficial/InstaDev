@@ -31,7 +31,35 @@ namespace instadev.Models
 
         private string Prepare(Usuario usuario)
         {
-            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{usuario.Seguindo};{usuario.NumeroSeguidores};{usuario.Seguidores};{usuario.Email};{usuario.Username};{usuario.Senha}";
+            string seguindo_ = "";
+            bool seguindo = false;
+            string seguidores_ = "";
+            bool seguidores = false;
+            foreach (var item in usuario.Seguindo)
+            {
+                if (seguindo)
+                {
+                    seguindo_ += $"/{item}";
+                }
+                else
+                {
+                    seguindo_ = $"{item}";
+                    seguindo = true;
+                }
+            }
+            foreach (var item in usuario.Seguidores)
+            {
+                if (seguidores)
+                {
+                    seguidores_ += $"/{item}";
+                }
+                else
+                {
+                    seguidores_ = $"{item}";
+                    seguidores = true;
+                }
+            }
+            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Username};{usuario.Senha}";
         }
         private List<string> PrepareList(List<Usuario> usuarios)
         {
