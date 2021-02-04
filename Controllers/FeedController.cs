@@ -14,20 +14,31 @@ namespace instadev.Controllers
         Publicacao publicacaoModel = new Publicacao();
         public IActionResult Index()
         {
+            if(ViewBag.NomeUsuario == null)//Depende do login
+            {
+                return LocalRedirect("~/Login");
+            }
             List<Usuario> usuarios = usuarioModel.ListarUsuarios();
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
             List<string> publicacoesLinha = new List<string>();
+            string nomebag = "";
+            foreach (var item in ViewBag.NomeUsuario)
+            {
+                nomebag = item;
+            }
+            int idUsuario = usuarios.Find(x => x.NomeUsuario == nomebag).IdUsuario;
             foreach (var item in publicacoes)
             {
                 string ImagemAutor = usuarios.Find(x => x.IdUsuario == item.IdUsuario).Foto;
-                string AutorUsername = usuarios.Find(x => x.IdUsuario == item.IdUsuario).Username;
-                string Nome = usuarios.Find(x => x.IdUsuario == item.IdUsuario).Nome;
+                string AutorUsername = usuarios.Find(x => x.IdUsuario == item.IdUsuario).NomeUsuario;
+                string AutorNome = usuarios.Find(x => x.IdUsuario == item.IdUsuario).Nome;
 
                 int IdPublicacao = item.IdPublicacao;
                 string PublicacaoImagem = item.Imagem;
                 string PublicacaoLegenda = item.Legenda;
-                int PublicacaoLikes = item.NumeroLikes;
-                publicacoesLinha.Add($"{ImagemAutor};{AutorUsername};{Nome};{IdPublicacao};{PublicacaoImagem};{PublicacaoLegenda};{PublicacaoLikes}");
+                int PublicacaoNumeroLikes = item.NumeroLikes;
+                bool UsuarioLike = item.Likes.Exists(x => x == idUsuario);
+                publicacoesLinha.Add($"{ImagemAutor};{AutorUsername};{AutorNome};{IdPublicacao};{PublicacaoImagem};{PublicacaoLegenda};{PublicacaoNumeroLikes};{UsuarioLike}");
             }
             ViewBag.Usuarios = usuarios;
             ViewBag.Publicacoes = publicacoesLinha;
@@ -36,10 +47,21 @@ namespace instadev.Controllers
         [Route("Cadastrar")]
         public IActionResult CadastrarPublicacao(IFormCollection form)
         {
+            if(ViewBag.NomeUsuario == null)//Depende do login
+            {
+                return LocalRedirect("~/Login");
+            }
             Publicacao novaPublicacao = new Publicacao();
             Random random = new Random();
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
+            List<Usuario> usuarios = usuarioModel.ListarUsuarios();
             int idPub = random.Next(100000, 1000000);
+            string nomebag = "";
+            foreach (var item in ViewBag.NomeUsuario)
+            {
+                nomebag = item;
+            }
+            int idUsuario = usuarios.Find(x => x.NomeUsuario == nomebag).IdUsuario;
             while (publicacoes.Exists(x => x.IdPublicacao != idPub))
             {
                 idPub = random.Next(100000, 1000000);
@@ -58,7 +80,7 @@ namespace instadev.Controllers
             }
             novaPublicacao.Imagem = file.FileName;
             novaPublicacao.Legenda = form["Legenda"];
-            novaPublicacao.IdUsuario = ;
+            novaPublicacao.IdUsuario = idUsuario; //Login
             novaPublicacao.NumeroLikes = 0;
             publicacaoModel.CriarPublicacao(novaPublicacao);
             return LocalRedirect("~/Feed");

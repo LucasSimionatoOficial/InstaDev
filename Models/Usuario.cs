@@ -9,7 +9,7 @@ namespace instadev.Models
     {
         public int IdUsuario { get; set; }
         public string Nome { get; set; }
-        public string NomeUsuario{ get; set; }
+        public string NomeUsuario { get; set; }
         public string Foto { get; set; }
         public DateTime DataNascimento { get; set; }
         public int NumeroSeguindo { get; set; }
