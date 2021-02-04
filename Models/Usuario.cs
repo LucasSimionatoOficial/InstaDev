@@ -9,6 +9,7 @@ namespace instadev.Models
     {
         public int IdUsuario { get; set; }
         public string Nome { get; set; }
+        public string NomeUsuario{ get; set; }
         public string Foto { get; set; }
         public DateTime DataNascimento { get; set; }
         public int NumeroSeguindo { get; set; }
@@ -20,7 +21,7 @@ namespace instadev.Models
         public string Senha { get; set; }
         private string PATH = "Database/Usuario.csv";
 
-        //Usuario.csv IdUsuario;Nome;Foto;DataNascimento;NumeroSeguindo;Seguindo;NumeroSeguidores;Seguidores;Email;Username;Senha
+        //Usuario.csv IdUsuario;Nome;NomeUsuario;Foto;DataNascimento;NumeroSeguindo;Seguindo;NumeroSeguidores;Seguidores;Email;Username;Senha
         //Seguindo idSeguidor1/idSeguidor2...
         //Seguidores idSeguidor1/idSeguidor2...
         //Usar split com barra para separar
@@ -59,7 +60,7 @@ namespace instadev.Models
                     seguidores = true;
                 }
             }
-            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Username};{usuario.Senha}";
+            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.NomeUsuario};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Username};{usuario.Senha}";
         }
         private List<string> PrepareList(List<Usuario> usuarios)
         {
@@ -104,27 +105,28 @@ namespace instadev.Models
                 Usuario usuario = new Usuario();
                 usuario.IdUsuario = int.Parse(linha.Split(";")[0]);
                 usuario.Nome = linha.Split(";")[1];
-                usuario.Foto = linha.Split(";")[2];
-                usuario.DataNascimento = DateTime.Parse(linha.Split(";")[3]);
-                usuario.NumeroSeguindo = int.Parse(linha.Split(";")[4]);
-                string seguindo_ = linha.Split(";")[5];
+                usuario.NomeUsuario = linha.Split(";")[2];
+                usuario.Foto = linha.Split(";")[3];
+                usuario.DataNascimento = DateTime.Parse(linha.Split(";")[4]);
+                usuario.NumeroSeguindo = int.Parse(linha.Split(";")[5]);
+                string seguindo_ = linha.Split(";")[6];
                 string[] seguindo__ = seguindo_.Split("/");
                 List<int> ListaSeguindo = new List<int>();
                 foreach (var item in seguindo__)
                 {
                     ListaSeguindo.Add(int.Parse(item));
                 }
-                usuario.NumeroSeguidores = int.Parse(linha.Split(";")[6]);
-                string seguidores_ = linha.Split(";")[7];
+                usuario.NumeroSeguidores = int.Parse(linha.Split(";")[7]);
+                string seguidores_ = linha.Split(";")[8];
                 string[] seguidores__ = seguindo_.Split("/");
                 List<int> ListaSeguidores = new List<int>();
                 foreach (var item in seguidores__)
                 {
                     ListaSeguidores.Add(int.Parse(item));
                 }
-                usuario.Email = linha.Split(";")[8];
-                usuario.Username = linha.Split(";")[9];
-                usuario.Senha = linha.Split(";")[10];
+                usuario.Email = linha.Split(";")[9];
+                usuario.Username = linha.Split(";")[10];
+                usuario.Senha = linha.Split(";")[11];
                 usuarios.Add(usuario);
             }
             return usuarios;
