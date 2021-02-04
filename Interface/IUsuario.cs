@@ -10,6 +10,6 @@ namespace instadev.Interface
         void EditarUsuario(Usuario usuario);
         void DeletarUsuario(int id);
         List<Usuario> ListarUsuarios();
-        void Seguir(int idSeguidor,int idSeguido, bool seguir);
+        void Seguir(int idSeguidor,int idSeguido);
     }
 }

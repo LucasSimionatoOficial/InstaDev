@@ -25,7 +25,7 @@ namespace instadev.Models
         //Seguidores idSeguidor1/idSeguidor2...
         //Usar split com barra para separar
 
-        Usuario(){
+        public Usuario(){
             CreateFolderAndFile(PATH);
         }
 
@@ -80,7 +80,11 @@ namespace instadev.Models
         {
             List<Usuario> usuarios = ListarUsuarios();
             usuarios.RemoveAll(x => x.IdUsuario == id);
+            Publicacao publicacao = new Publicacao();
+            publicacao.ExcluirPublicacoesUsuario(id);
             RewriteCsv(PATH, PrepareList(usuarios));
+            Comentario comentario = new Comentario();
+            comentario.ExcluirComentariosUsuario(id);
         }
 
         public void EditarUsuario(Usuario usuario)
@@ -132,10 +136,10 @@ namespace instadev.Models
             return usuarios.Find(x => x.IdUsuario == id);
         }
 
-        public void Seguir(int idSeguidor, int idSeguindo, bool seguir)
+        public void Seguir(int idSeguidor, int idSeguindo)
         {
             List<Usuario> usuarios = ListarUsuarios();
-            if (seguir)
+            if (!usuarios.Find(x => x.IdUsuario == idSeguindo).Seguidores.Exists(x => x == idSeguidor))
             {
                 usuarios.Find(x => x.IdUsuario == idSeguindo).NumeroSeguidores++;
                 usuarios.Find(x => x.IdUsuario == idSeguindo).Seguidores.Add(idSeguidor);

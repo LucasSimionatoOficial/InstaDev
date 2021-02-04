@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using instadev.Models;
 
 namespace instadev.Interface
@@ -5,7 +6,7 @@ namespace instadev.Interface
     public interface IComentario
     {
         void CriarComentario(Comentario comentario);
-        void LerComentario(int idComentario);
+        List<Comentario> ListarComentarios();
         void EditarComentario(Comentario comentario);
         void ExcluirComentario(int IdComentario);
     }

@@ -12,12 +12,12 @@ namespace instadev.Models
         public int IdUsuario { get; set; }
         public int NumeroLikes { get; set; }
         public List<int> Likes { get; set; }
-        private string PATH = "Database/Publicacoes";
+        private string PATH = "Database/Publicacoes.csv";
         //Organizaxao do csv: IdPublicacao;Imagem;Legenda;IdUsuario;NumeroLikes;Likes
         //Likes idlike1/idlike2...
 
         //Usar a barra como separador para saber quem deu o like; idlike = id de alguem que deu like
-        Publicacao()
+        public Publicacao()
         {
             CreateFolderAndFile(PATH);
         }
@@ -79,6 +79,27 @@ namespace instadev.Models
         {
             List<Publicacao> publicacoes = new List<Publicacao>();
             publicacoes.RemoveAll(x => x.IdPublicacao == id);
+            RewriteCsv(PATH, PrepareList(publicacoes));
+            Comentario comentario = new Comentario();
+            comentario.ExcluirComentariosPublicacao(id);
+        }
+        public void ExcluirPublicacoesUsuario(int id)
+        {
+            List<Publicacao> publicacoes = ListarPublicacoes();
+            List<Publicacao> id_ = publicacoes.FindAll(x => x.IdUsuario == id);
+            publicacoes.RemoveAll(x => x.IdUsuario == id);
+            RewriteCsv(PATH, PrepareList(publicacoes));
+            List<int> id__ = new List<int>();
+            foreach (var publicacao in id_)
+            {
+                id__.Add(publicacao.IdPublicacao);
+            }
+            Comentario comentario = new Comentario();
+            foreach (var item in id__)
+            {
+                comentario.ExcluirComentariosPublicacao(item);
+            }
+
         }
 
         public List<Publicacao> ListarPublicacoes()
