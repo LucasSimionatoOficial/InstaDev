@@ -29,12 +29,18 @@ namespace InstaDev.Controllers
             csv.Find(
                 x => 
                 x.Split(";")[9] == form["Email"] && 
-                x.Split(";")[11] == form["Senha"]
+                x.Split(";")[10] == form["Senha"]
+            );
+            var logado2 = 
+            csv.Find(
+                x => 
+                x.Split(";")[2] == form["Email"] &&
+                x.Split(";")[10] == form["Senha"]
             );
 
 
             // Redirecionamos o usuário logado caso encontrado
-            if(logado != null)
+            if(logado != null || logado2 != null)
             {
                 Console.WriteLine("Estou logado");
                 

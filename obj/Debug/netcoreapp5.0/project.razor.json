@@ -15603,13 +15603,13 @@
   "RootNamespace": "instadev",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\login\\Index.cshtml",
+      "TargetPath": "Views\\login\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15628,8 +15628,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Feed\\index.cshtml",
+      "TargetPath": "Views\\Feed\\index.cshtml",
       "FileKind": "mvc"
     }
   ],
