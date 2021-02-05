@@ -6,3 +6,43 @@ C:\Users\10\Documents\Curso\1º Semestre\Projeto de avaliação\instadev\obj\Deb
 C:\Users\10\Documents\Curso\1º Semestre\Projeto de avaliação\instadev\obj\Debug\netcoreapp5.0\instadev.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\10\Documents\Curso\1º Semestre\Projeto de avaliação\instadev\obj\Debug\netcoreapp5.0\instadev.RazorAssemblyInfo.cache
 C:\Users\10\Documents\Curso\1º Semestre\Projeto de avaliação\instadev\obj\Debug\netcoreapp5.0\instadev.RazorAssemblyInfo.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.csprojAssemblyReference.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.AssemblyInfoInputs.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.AssemblyInfo.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.RazorAssemblyInfo.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.RazorAssemblyInfo.cs
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\appsettings.Development.json
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\appsettings.json
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.exe
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.deps.json
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.runtimeconfig.json
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.runtimeconfig.dev.json
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.dll
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\ref\instadev.dll
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.pdb
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.Views.dll
+C:\Users\FIC\Desktop\instadev\bin\Debug\netcoreapp5.0\instadev.Views.pdb
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\staticwebassets\instadev.StaticWebAssets.Manifest.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\staticwebassets\instadev.StaticWebAssets.xml
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\scopedcss\bundle\instadev.styles.css
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.TagHelpers.input.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.TagHelpers.output.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.RazorCoreGenerate.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\EditarPerfil\Index.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Feed\index.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\login\Index.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.RazorTargetAssemblyInfo.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.RazorTargetAssemblyInfo.cs
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.Views.pdb
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.dll
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\ref\instadev.dll
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.pdb
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.genruntimeconfig.cache
+C:\Users\FIC\Desktop\instadev\obj\Debug\netcoreapp5.0\instadev.csproj.CopyComplete

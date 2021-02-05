@@ -10,6 +10,8 @@ namespace instadev.Controllers
     {
         Usuario usuarioModel = new Usuario();
 
+        //DEPENDE DO LOGIN
+       
         public IActionResult Index()
         {
             ViewBag.Usuarios = usuarioModel.ListarUsuarios();
@@ -17,20 +19,67 @@ namespace instadev.Controllers
             return View();
         }
 
-        [Route("{id}")]
-        public IActionResult EditarUsuario(int id, IFormCollection form)
+        // http://localhost:5001/Editar/1
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id, IFormCollection form)
         {     
-            re
+            Usuario usuarioEdit = new Usuario();
+
+            usuarioEdit.Nome = form[("Nome")];
+            usuarioEdit.NomeUsuario = form[("NomeUsuario")];
+            usuarioEdit.Senha = form[("Senha")];
+
+            usuarioModel.EditarUsuario(usuarioEdit);
+            ViewBag.Usuarios = usuarioModel.ListarUsuarios();
+
+            return LocalRedirect("~/Feed");
         }
 
-        [Route("{id}")]
+        // http://localhost:5001/Deletar/1
+        [Route("Deletar/{id}")]
         public IActionResult DeletarUsuario(int id)
         {
             usuarioModel.DeletarUsuario(id);
 
             ViewBag.Usuarios = usuarioModel.ListarUsuarios();
 
-            return LocalRedirect("~/Editar/Listar");
+            return LocalRedirect("~/Logar");
+        }
+
+        public IActionResult EditarImagem()
+        {
+            //Veirificamos se o usuário anexou algum arquivo
+            if ( form.Files.Count > 0 )
+            {
+                //Armazenamos o arquivo na variável file
+                var file = form.Files[0];
+
+                //Feito para definir/amazenar o caminho das imagens
+                var folder = Path.Combine( Directory.GetCurrentDirectory(), "wwwroot/img/FotoPerfil" );
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                                                // localhost:5001   +                   + FotoPerfil + nome do arquivo(equipes.jpg, por exemplo) 
+                var path = Path.Combine( Directory.GetCurrentDirectory(), "wwwroot/img;", folder, file.FileName );
+
+                //FileStream: recebeu o caminho de manipulação do arquivo (neste exemplo é a criação) e digo o que fazer no arquivo (FileMode.Create)
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    //Salvamos o arquivo no caminho especifícado
+                    file.CopyTo(stream);
+                }
+
+                //Atribuímos a imagem na imagem
+                novaEquipe.Imagem = file.FileName;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
+
+            //Fim do Upload ---------------------------------------------------------------------------
         }
         
         
