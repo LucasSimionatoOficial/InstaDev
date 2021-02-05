@@ -21,7 +21,7 @@ namespace instadev.Models
         public string Senha { get; set; }
         private string PATH = "Database/Usuario.csv";
 
-        //Usuario.csv IdUsuario;Nome;NomeUsuario;Foto;DataNascimento;NumeroSeguindo;Seguindo;NumeroSeguidores;Seguidores;Email;Username;Senha
+        //Usuario.csv IdUsuario;Nome;NomeUsuario;Foto;DataNascimento;NumeroSeguindo;Seguindo;NumeroSeguidores;Seguidores;Email;Senha
         //Seguindo idSeguidor1/idSeguidor2...
         //Seguidores idSeguidor1/idSeguidor2...
         //Usar split com barra para separar
@@ -61,7 +61,7 @@ namespace instadev.Models
                     seguidores = true;
                 }
             }
-            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.NomeUsuario};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Username};{usuario.Senha}";
+            return $"{usuario.IdUsuario};{usuario.Nome};{usuario.NomeUsuario};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Senha}";
         }
         private List<string> PrepareList(List<Usuario> usuarios)
         {
@@ -128,8 +128,7 @@ namespace instadev.Models
                     ListaSeguidores.Add(int.Parse(item));
                 }
                 usuario.Email = linha.Split(";")[9];
-                usuario.Username = linha.Split(";")[10];
-                usuario.Senha = linha.Split(";")[11];
+                usuario.Senha = linha.Split(";")[10];
                 usuarios.Add(usuario);
             }
             return usuarios;

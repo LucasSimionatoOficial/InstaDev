@@ -15603,8 +15603,23 @@
   "RootNamespace": "instadev",
   "Documents": [
     {
+<<<<<<< HEAD:obj/Debug/net5.0/project.razor.json
       "FilePath": "c:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+=======
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\login\\Index.cshtml",
+      "TargetPath": "Views\\login\\Index.cshtml",
+>>>>>>> 4d55acc29cffbfa9826673988535ffce966bcec4:obj/Debug/netcoreapp5.0/project.razor.json
       "FileKind": "mvc"
     },
     {
@@ -15623,13 +15638,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\Views\\Feed\\index.cshtml",
+<<<<<<< HEAD:obj/Debug/net5.0/project.razor.json
+      "FilePath": "c:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+=======
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Feed\\index.cshtml",
       "TargetPath": "Views\\Feed\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\Views\\login\\Index.cshtml",
-      "TargetPath": "Views\\login\\Index.cshtml",
+>>>>>>> 4d55acc29cffbfa9826673988535ffce966bcec4:obj/Debug/netcoreapp5.0/project.razor.json
       "FileKind": "mvc"
     }
   ],
