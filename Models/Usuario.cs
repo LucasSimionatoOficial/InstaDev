@@ -8,15 +8,15 @@ namespace instadev.Models
     public class Usuario: InstadevBase, IUsuario
     {
         public int IdUsuario { get; set; }
-        public string Nome { get; set; }
-        public string NomeUsuario{ get; set; }
+        public string Nome { get; set; } //Edição de perfil
+        public string NomeUsuario{ get; set; } //Edição de perfil
         public string Foto { get; set; }
-        public DateTime DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; } 
         public int NumeroSeguindo { get; set; }
         public List<int> Seguindo { get; set; } // quem o usuario logado segue
         public int NumeroSeguidores { get; set; }
         public List<int> Seguidores { get; set; } // quem segue o usuario logado
-        public string Email { get; set; }
+        public string Email { get; set; } //Edição de perfil
         public string Username { get; set; }
         public string Senha { get; set; }
         private string PATH = "Database/Usuario.csv";
@@ -26,7 +26,8 @@ namespace instadev.Models
         //Seguidores idSeguidor1/idSeguidor2...
         //Usar split com barra para separar
 
-        public Usuario(){
+        public Usuario()
+        {
             CreateFolderAndFile(PATH);
         }
 
@@ -77,6 +78,7 @@ namespace instadev.Models
             File.AppendAllLines(PATH, linhas);
         }
 
+        //Edição de perfil
         public void DeletarUsuario(int id)
         {
             List<Usuario> usuarios = ListarUsuarios();
@@ -88,6 +90,7 @@ namespace instadev.Models
             comentario.ExcluirComentariosUsuario(id);
         }
 
+        //Edição de perfil
         public void EditarUsuario(Usuario usuario)
         {
             List<Usuario> usuarios = ListarUsuarios();
