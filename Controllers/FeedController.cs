@@ -42,8 +42,11 @@ namespace instadev.Controllers
                 string PublicacaoImagem = item.Imagem;
                 string PublicacaoLegenda = item.Legenda;
                 int PublicacaoNumeroLikes = item.NumeroLikes;
-                bool UsuarioLike = item.Likes.Exists(x => x == idUsuario);
-
+                string UsuarioLike = "~/wwwroot/img/Feed/heart.svg";
+                if(item.Likes.Exists(x => x == idUsuario))
+                {
+                    UsuarioLike = "~/wwwroot/img/Feed/red_heart.svg";
+                }
                 string ComentarioMensagem = "";
                 string ComentarioUsuario = "";
                 bool comentario_ = true;

@@ -25,6 +25,45 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header */
+.header{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border-bottom: 1px solid;
+    border-color: rgb(238, 237, 237);
+    margin-bottom: 38px;
+}
+.menu{
+    width: 935px;
+    height: 45px;
+    background-color: white;
+    margin: auto;
+    border-bottom: 1px solid;
+    border-color: rgb(238, 237, 237);
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px; 
+}
+.pesquisa{
+    width: 15px;
+    height: 22px;
+    margin: auto;
+    padding-right: 15px;
+}
+.botoes{
+    width: 240px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+/* Header */
+
 .container1{
     margin: 0 auto;
     width: 938px;
@@ -45,7 +84,7 @@
     height: 113px;
     background-color: var(--branco);
     display: flex;
-    justify-content: space-around;
+    overflow: hidden;
     border: 1px solid var(--bordaBlocos);
 }
 
@@ -59,6 +98,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: auto 20px;
+}
+
+.statusprofile h3{
+    text-align: center;
 }
 
 h3{
@@ -100,7 +144,7 @@ h2{
     border: 1px solid var(--bordaBlocos);
 }
 
-#post div, form{
+#post div, #post form{
     display: flex;
     align-items: center;
 }
@@ -186,6 +230,27 @@ label[for="postImage"]{
     width: 610px;
 }
 
+.likeComment{
+    display: flex;
+    align-items: flex-end;
+}
+
+.likeComment form{
+    display: flex;
+    align-items: center;
+}
+
+.buttonComment{
+    background-color: var(--branco);
+    border: none;
+    width: 24px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
 select{
     display: none;
 }
@@ -203,18 +268,12 @@ select{
     margin: 13px 0 16px 16px;
 }
 
-.publicationBottom svg{
-    margin-right: 8px;
-}
-
 .baloon{
     position: relative;
     top: -3px;
 }
 
 .publicationInput{
-    position: relative;
-    top: -8px;
     border: none;
     border-bottom: 1px solid var(--cinzaInputBorda);
     color: var(--fonteCinzaComentar);
