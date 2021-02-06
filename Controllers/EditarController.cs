@@ -7,15 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 namespace instadev.Controllers
 {
     [Route("Editar")]
-    public class EditarController : Controller
+    public class EditarPerfilController : Controller
     {
         Usuario usuarioModel = new Usuario();
 
         //DEPENDE DO LOGIN
-       [Route("Listar")]
+       /* [Route("Listar")] */
         public IActionResult Index()
         {
             ViewBag.Usuarios = usuarioModel.ListarUsuarios();
+            ViewBag.UsuarioAtual = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
 
             return View();
         }
@@ -29,11 +30,12 @@ namespace instadev.Controllers
             usuarioEdit.Nome = form[("Nome")];
             usuarioEdit.NomeUsuario = form[("NomeUsuario")];
             usuarioEdit.Senha = form[("Senha")];
+            usuarioEdit.IdUsuario = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName")).IdUsuario;
 
             usuarioModel.EditarUsuario(usuarioEdit);
             ViewBag.Usuarios = usuarioModel.ListarUsuarios();
 
-            return LocalRedirect("~/Editar/Listar");
+            return LocalRedirect("~/Editar");
         }
 
         // http://localhost:5001/Deletar/1
@@ -44,7 +46,7 @@ namespace instadev.Controllers
 
             ViewBag.Usuarios = usuarioModel.ListarUsuarios();
 
-            return LocalRedirect("~/Editar/Listar");
+            return LocalRedirect("~/Editar");
         }
 
         [Route("Imagem")]
@@ -83,7 +85,7 @@ namespace instadev.Controllers
                 novoUsuario.Foto = "padrao.png";
             }
 
-            return LocalRedirect("~/Editar/Listar");
+            return LocalRedirect("~/Editar");
         }
         
         
