@@ -25,7 +25,7 @@ namespace instadev.Models
         {
             string likes_ = "";
             bool likes = false;
-            foreach (var item in publicacao.Likes)
+            foreach (int item in publicacao.Likes)
             {
                 if (likes)
                 {
@@ -116,10 +116,12 @@ namespace instadev.Models
                 publicacao.NumeroLikes = int.Parse(linha.Split(";")[4]);
                 string likes_ = linha.Split(";")[5];
                 string[] likes__ = likes_.Split("/");
+                List<int> ListaLikes = new List<int>();
                 foreach (var item in likes__)
                 {
-                    publicacao.Likes.Add(int.Parse(item));
+                    ListaLikes.Add(int.Parse(item));
                 }
+                publicacao.Likes = ListaLikes;
                 publicacoes.Add(publicacao);
             }
             return publicacoes;

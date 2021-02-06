@@ -12,19 +12,24 @@ namespace instadev.Controllers
     {
         Usuario usuarioModel = new Usuario();
         Publicacao publicacaoModel = new Publicacao();
+        Comentario comentarioModel = new Comentario();
         public IActionResult Index()
         {
+            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
+            //Temporario
             if(ViewBag.NomeUsuario == null)//Depende do login
             {
                 return LocalRedirect("~/Login");
             }
             List<Usuario> usuarios = usuarioModel.ListarUsuarios();
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
+            List<Comentario> comentarios = comentarioModel.ListarComentarios();
             List<string> publicacoesLinha = new List<string>();
             string nomebag = "";
             foreach (var item in ViewBag.NomeUsuario)
             {
-                nomebag = item;
+                nomebag = item.NomeUsuario;
             }
             int idUsuario = usuarios.Find(x => x.NomeUsuario == nomebag).IdUsuario;
             foreach (var item in publicacoes)
@@ -38,7 +43,25 @@ namespace instadev.Controllers
                 string PublicacaoLegenda = item.Legenda;
                 int PublicacaoNumeroLikes = item.NumeroLikes;
                 bool UsuarioLike = item.Likes.Exists(x => x == idUsuario);
-                publicacoesLinha.Add($"{ImagemAutor};{AutorUsername};{AutorNome};{IdPublicacao};{PublicacaoImagem};{PublicacaoLegenda};{PublicacaoNumeroLikes};{UsuarioLike}");
+
+                string ComentarioMensagem = "";
+                string ComentarioUsuario = "";
+                bool comentario_ = true;
+                foreach (var comentario in comentarios.FindAll(x => x.IdPublicacao == IdPublicacao))
+                {
+                    if(!comentario_)
+                    {
+                        ComentarioMensagem = comentario.Mensagem;
+                        ComentarioUsuario += $"{usuarios.Find(x => x.IdUsuario == comentario.IdUsuario).NomeUsuario}";
+                        comentario_ = false;
+                    }
+                    else
+                    {
+                        ComentarioMensagem += $"/{comentario.Mensagem}";
+                        ComentarioUsuario += $"/{usuarios.Find(x => x.IdUsuario == comentario.IdUsuario).NomeUsuario}";
+                    }
+                }
+                publicacoesLinha.Add($"{ImagemAutor};{AutorUsername};{AutorNome};{IdPublicacao};{PublicacaoImagem};{PublicacaoLegenda};{PublicacaoNumeroLikes};{UsuarioLike};{ComentarioMensagem};{ComentarioUsuario}");
             }
             ViewBag.Usuarios = usuarios;
             ViewBag.Publicacoes = publicacoesLinha;
@@ -47,6 +70,9 @@ namespace instadev.Controllers
         [Route("Cadastrar")]
         public IActionResult CadastrarPublicacao(IFormCollection form)
         {
+            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
+            //Temporario
             if(ViewBag.NomeUsuario == null)//Depende do login
             {
                 return LocalRedirect("~/Login");
@@ -59,16 +85,16 @@ namespace instadev.Controllers
             string nomebag = "";
             foreach (var item in ViewBag.NomeUsuario)
             {
-                nomebag = item;
+                nomebag = item.NomeUsuario;
             }
             int idUsuario = usuarios.Find(x => x.NomeUsuario == nomebag).IdUsuario;
-            while (publicacoes.Exists(x => x.IdPublicacao != idPub))
+            while (publicacoes.Exists(x => x.IdPublicacao == idPub))
             {
                 idPub = random.Next(100000, 1000000);
             }
             novaPublicacao.IdPublicacao = idPub;
             var file = form.Files[0];
-            var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwroot/img/Publicacao");
+            var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Publicacao");
             if(!Directory.Exists(folder))
             {
                 Directory.CreateDirectory(folder);
@@ -82,6 +108,11 @@ namespace instadev.Controllers
             novaPublicacao.Legenda = form["Legenda"];
             novaPublicacao.IdUsuario = idUsuario; //Login
             novaPublicacao.NumeroLikes = 0;
+            //temporario
+            List<int> likes = new List<int>();
+            likes.Add(1);
+            novaPublicacao.Likes = likes;
+            //temporario
             publicacaoModel.CriarPublicacao(novaPublicacao);
             return LocalRedirect("~/Feed");
         }
@@ -93,9 +124,31 @@ namespace instadev.Controllers
         } */
         
         [Route("Comentar")]
-        public IActionResult Comentar()
+        public IActionResult Comentar(IFormCollection form)
         {
-            return View();
+            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
+            //Temporario
+            string nomebag = "";
+            foreach (var item in ViewBag.NomeUsuario)
+            {
+                nomebag = item.NomeUsuario;
+            }
+            int idUsuario = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == nomebag).IdUsuario;
+            List<Comentario> comentarios = comentarioModel.ListarComentarios();
+            Comentario novoComentario = new Comentario();
+            Random random = new Random();
+            int idComentario_ = random.Next(100000, 1000000);
+            while(comentarios.Exists(x => x.IdComentario == idComentario_))
+            {
+                idComentario_ = random.Next(100000, 1000000);
+            }
+            novoComentario.IdComentario = idComentario_;
+            novoComentario.Mensagem = form["mensagem"];
+            novoComentario.IdUsuario = idUsuario;
+            novoComentario.IdPublicacao = int.Parse(form["idPublicacao"]);
+            comentarioModel.CriarComentario(novoComentario);
+            return LocalRedirect("~/Feed");
         }
     }
 }
