@@ -15,9 +15,7 @@ namespace instadev.Controllers
         Comentario comentarioModel = new Comentario();
         public IActionResult Index()
         {
-            //Temporario
-            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
-            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
             if(ViewBag.NomeUsuario == null)//Depende do login
             {
                 return LocalRedirect("~/Login");
@@ -26,11 +24,7 @@ namespace instadev.Controllers
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
             List<Comentario> comentarios = comentarioModel.ListarComentarios();
             List<string> publicacoesLinha = new List<string>();
-            string nomebag = "";
-            foreach (var item in ViewBag.NomeUsuario)
-            {
-                nomebag = item.NomeUsuario;
-            }
+            string nomebag = HttpContext.Session.GetString("_UserName");
             int idUsuario = usuarios.Find(x => x.NomeUsuario == nomebag).IdUsuario;
             foreach (var item in publicacoes)
             {
@@ -73,9 +67,7 @@ namespace instadev.Controllers
         [Route("Cadastrar")]
         public IActionResult CadastrarPublicacao(IFormCollection form)
         {
-            //Temporario
-            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
-            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
             if(ViewBag.NomeUsuario == null)//Depende do login
             {
                 return LocalRedirect("~/Login");
@@ -129,9 +121,7 @@ namespace instadev.Controllers
         [Route("Comentar")]
         public IActionResult Comentar(IFormCollection form)
         {
-            //Temporario
-            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.IdUsuario == 1);
-            //Temporario
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
             string nomebag = "";
             foreach (var item in ViewBag.NomeUsuario)
             {

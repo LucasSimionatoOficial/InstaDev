@@ -5,17 +5,17 @@
                 <div class="instadev">
                     <img src="img/Instadev.png" alt="slogan">
                 </div>
-
-                <div class="blocos">
-                    <input type="text" name="" placeholder="Email">
-                    <input type="text" name="" placeholder="Senha">
-                </div>
-                
-                <div class="entrar">
-                    @* asp-controller="meuController"  asp-action="Ação" *@
-                    <a href="#">Entrar</a>
-                </div>  
-
+                <form method="POST" action='@Url.Action("Logar")' enctype="multipart/form-data">
+                    <div class="blocos">
+                        <input type="text" name="Email" placeholder="Email ou Nome de Usuario">
+                        <input type="text" name="Senha" placeholder="Senha">
+                    </div>
+                    
+                    <div class="entrar">
+                        @* asp-controller="meuController"  asp-action="Ação" *@
+                        <button type="submit">Entrar</button>
+                    </div>  
+                </form>
 
                 <div class="OU"></div>
                     <a href="#">OU</a>

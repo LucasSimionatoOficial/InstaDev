@@ -17,7 +17,6 @@ namespace instadev.Models
         public int NumeroSeguidores { get; set; }
         public List<int> Seguidores { get; set; } // quem segue o usuario logado
         public string Email { get; set; } //Edição de perfil
-        public string Username { get; set; }
         public string Senha { get; set; }
         private string PATH = "Database/Usuario.csv";
 
@@ -37,28 +36,34 @@ namespace instadev.Models
             bool seguindo = false;
             string seguidores_ = "";
             bool seguidores = false;
-            foreach (var item in usuario.Seguindo)
+            if(usuario.Seguindo != null)
             {
-                if (seguindo)
+                foreach (var item in usuario.Seguindo)
                 {
-                    seguindo_ += $"/{item}";
-                }
-                else
-                {
-                    seguindo_ = $"{item}";
-                    seguindo = true;
+                    if (seguindo)
+                    {
+                        seguindo_ += $"/{item}";
+                    }
+                    else
+                    {
+                        seguindo_ = $"{item}";
+                        seguindo = true;
+                    }
                 }
             }
-            foreach (var item in usuario.Seguidores)
+            if(usuario.Seguidores != null)
             {
-                if (seguidores)
+                foreach (var item in usuario.Seguidores)
                 {
-                    seguidores_ += $"/{item}";
-                }
-                else
-                {
-                    seguidores_ = $"{item}";
-                    seguidores = true;
+                    if (seguidores)
+                    {
+                        seguidores_ += $"/{item}";
+                    }
+                    else
+                    {
+                        seguidores_ = $"{item}";
+                        seguidores = true;
+                    }
                 }
             }
             return $"{usuario.IdUsuario};{usuario.Nome};{usuario.NomeUsuario};{usuario.Foto};{usuario.DataNascimento};{usuario.NumeroSeguindo};{seguindo_};{usuario.NumeroSeguidores};{seguidores_};{usuario.Email};{usuario.Senha}";

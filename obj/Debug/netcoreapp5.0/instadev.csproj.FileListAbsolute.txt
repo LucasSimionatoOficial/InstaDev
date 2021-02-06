@@ -63,7 +63,6 @@ C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\ins
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.TagHelpers.input.cache
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.TagHelpers.output.cache
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.RazorCoreGenerate.cache
-C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Cadastro\Cadastro.cshtml.g.cs
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\EditarPerfil\Index.cshtml.g.cs
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Feed\index.cshtml.g.cs
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\login\Index.cshtml.g.cs
@@ -79,3 +78,4 @@ C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\ins
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.pdb
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.genruntimeconfig.cache
 C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\instadev.csproj.CopyComplete
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Cadastro\index.cshtml.g.cs
