@@ -1,36 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\10\\.nuget\\packages\\": {}
+    "C:\\Users\\caisb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\instadev.csproj",
+      "projectUniqueName": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
       "projectName": "instadev",
-      "projectPath": "C:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\instadev.csproj",
-      "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10\\Documents\\Curso\\1º Semestre\\Projeto de avaliação\\instadev\\obj\\",
+      "projectPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+      "packagesPath": "C:\\Users\\caisb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\caisb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "netcoreapp5.0",
+        "netcoreapp3.1": {
           "projectReferences": {}
         }
       },
@@ -41,8 +40,7 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "netcoreapp5.0",
+      "netcoreapp3.1": {
         "imports": [
           "net461",
           "net462",
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

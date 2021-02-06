@@ -20,7 +20,7 @@ namespace instadev.Controllers
         [Route("{id}")]
         public IActionResult EditarUsuario(int id, IFormCollection form)
         {     
-            re
+            return View();
         }
 
         [Route("{id}")]

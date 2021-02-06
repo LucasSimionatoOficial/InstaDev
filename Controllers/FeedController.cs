@@ -88,13 +88,13 @@ namespace instadev.Controllers
         [Route("Like")]
         public IActionResult Like()
         {
-            publicacaoModel.Curtir( , );//idUsuarioatual, autor
+            // publicacaoModel.Curtir( , );//idUsuarioatual, autor
             return LocalRedirect("~/Feed");
         }
         [Route("Comentar")]
         public IActionResult Comentar()
         {
-            
+            return View();
         }
     }
 }
