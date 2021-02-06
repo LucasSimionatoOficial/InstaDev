@@ -23,9 +23,9 @@ namespace instadev.Controllers
 
             //Gerar numero aleatorio para o id
             Random random = new Random();
-            int idUsuario_ = 0;
+            int idUsuario_ = random.Next(100000, 1000000);
             List<Usuario> usuarios = usuarioModel.ListarUsuarios();
-            while (usuarios.Exists(x => x.IdUsuario != idUsuario_) && idUsuario_ != 0)
+            while (usuarios.Exists(x => x.IdUsuario == idUsuario_))
             {
                 idUsuario_ = random.Next(100000, 1000000);
             }
@@ -33,9 +33,11 @@ namespace instadev.Controllers
             Usuario novoUsuario = new Usuario();
             novoUsuario.IdUsuario           = idUsuario_;
             novoUsuario.Nome                = form["NomeCompleto"];
+            novoUsuario.Foto                = "";
+            novoUsuario.DataNascimento      = DateTime.Parse("01/01/2020");
             novoUsuario.NomeUsuario         = form["NomeUsuario"];
             novoUsuario.Email               = form["Email"];
-            novoUsuario.Senha               = form["senha"];
+            novoUsuario.Senha               = form["Senha"];
             novoUsuario.NumeroSeguidores    = 0;
             novoUsuario.NumeroSeguindo      = 0;
 

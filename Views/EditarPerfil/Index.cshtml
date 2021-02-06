@@ -1,6 +1,7 @@
 @{
     ViewData["Title"] = "Edição de Perfil";
 }
+<link rel="stylesheet" href="~/css/StyleEditarPerfil.css">
 
     <div class="container">
         <div class="esquerdo">
@@ -11,7 +12,8 @@
             <div class="dados">
                 <div class="info-titulo ">
                     <div class="imagem">
-                        <img src="/wwwroot/img/thank-you 1.png" alt="Imagem do usuário">
+                        <input Id="EditarImagem" name="Foto" type="file">
+                        <label for="EditarImagem"><img src="~/img/imagemPerfil/@ViewBag.UsuarioAtual.Foto" alt="Imagem do usuário"></label>
                     </div>
                     <div class="titulos-caixa">
                         <h3>Nome</h3>
@@ -19,30 +21,30 @@
                         <h3>Email</h3>
                     </div>
                 </div>
-                <div class="info-alterar">
+                <form method="POST" action='@Url.Action("Editar")' enctype="multipart/form-data" class="info-alterar">
                     <div class="nick">
                         <h3>yes_baby</h3>
                         <a asp-controller="Editar" asp-action="EditarImagem">Alterar foto de perfil</a>
                     </div>
                     <div class="barras">
-                        <input type="text" >
+                        <input name="Nome" type="text" >
                         <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
                         <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias</p>
                         <div class="barra-centro">
-                            <input type="text" >
+                            <input name="NomeUsuario" type="text" >
                         </div>
                         <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
                         <p>Informações pessoais <br>
                             Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
-                        <input type="text" >
+                        <input name="Senha" type="text" >
                     </div>
                     <div class="botao">
                         <button>Enviar</button>
                         <a asp-controller="Editar" asp-action="DeletarUsuario" asp-route-id="IdUsuario">Desativar minha conta definitivamente</a>
-                        <a asp-controller="Editar" asp-action="Editar">Enviar</a>
+                        @* <a asp-controller="Editar" asp-action="Editar">Enviar</a> *@
                     </div>
 
-                </div>
+                </form>
             </div>
         </div>
     </div>

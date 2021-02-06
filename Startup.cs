@@ -24,6 +24,14 @@ namespace instadev
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDistributedMemoryCache();
+
+                services.AddSession(options =>
+                {
+                    options.IdleTimeout = TimeSpan.FromHours(2);
+                    options.Cookie.HttpOnly = true;
+                    options.Cookie.IsEssential = true;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +52,8 @@ namespace instadev
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-  <html lang="pt-br">
-  <head>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI" rel="stylesheet" type="text/css"/>
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro • Instagram</title>
-    
-  </head>
-
-
-   <body>
+@{
+    ViewData["Title"] = "Cadastrar";
+}
         <main> 
             <section class="form-section"> 
                 
@@ -22,23 +11,23 @@
                         <p>vídeos dos seus amigos.</p>
                     </div>
     
-                    <form> 
+                    <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data"> 
                         
                         
                         <div class="register">
-                            <input type="email" id="cadastro-email" placeholder="Email" class="input"> 
+                            <input type="email" id="cadastro-email" name="Email" placeholder="Email" class="input"> 
                         </div>
 
                         <div class="register">
-                            <input type="text" id="cadastro-nome" placeholder="Nome completo" class="input"> 
+                            <input type="text" id="cadastro-nome" name="NomeCompleto" placeholder="Nome Completo" class="input"> 
                         </div>
 
                         <div class="register">
-                            <input type="text" id="cadastro-nick" placeholder="Nome de usuário" class="input"> 
+                            <input type="text" id="cadastro-nick" name="NomeUsuario" placeholder="Nome de Usuario" class="input"> 
                         </div>
                         
                         <div class="register">
-                            <input type="password" id="cadastro-senha" placeholder="Senha" class="input"> 
+                            <input type="password" id="cadastro-senha" name="Senha" placeholder="Senha" class="input"> 
                         </div>
                         
 
@@ -85,5 +74,3 @@
             </ul>
             <p>© 2021 Instadev</p>
         </footer>  
-    </body>
-</html>

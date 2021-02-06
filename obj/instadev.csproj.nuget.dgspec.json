@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caisb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
+        "projectName": "instadev",
+        "projectPath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
+        "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -53,7 +70,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
         }
       }
     }

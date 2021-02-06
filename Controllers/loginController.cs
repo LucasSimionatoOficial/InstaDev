@@ -6,7 +6,7 @@ using System;
 
 namespace InstaDev.Controllers
 {
-    public class loginController : Controller
+    public class LoginController : Controller
     {
         // Comentario novoComentario = new Comentario(); // -> instanciar o objeto novoComentario
 
@@ -18,7 +18,7 @@ namespace InstaDev.Controllers
         }
 
 
-        // [Route("Logar")]
+        [Route("Logar")]
         public IActionResult Logar(IFormCollection form)
         {
             // Lemos todos os arquivos do CSV
@@ -45,18 +45,18 @@ namespace InstaDev.Controllers
                 Console.WriteLine("Estou logado");
                 
                 // Definimos os valores a serem salvos na sessão
-                // HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
+                HttpContext.Session.SetString("_UserName", logado.Split(";")[2]);
 
-                return LocalRedirect("~/");
+                return LocalRedirect("~/Feed");
             }
             if(logado2 != null)
             {
                 Console.WriteLine("Estou logado");
                 
                 // Definimos os valores a serem salvos na sessão
-                // HttpContext.Session.SetString("_UserName", logado2.Split(";")[1]);
+                HttpContext.Session.SetString("_UserName", logado2.Split(";")[1]);
 
-                return LocalRedirect("~/");
+                return LocalRedirect("~/Feed");
             }
 
             Console.WriteLine("Não estou logado");

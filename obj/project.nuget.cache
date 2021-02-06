@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "I/Kp9HqAe+HBy3/7kZMBjbj0kXafO06JMgCJRrZaFGKtENBfvoWUwoA/1gPx3E4MjAxHAFJGHSUwu/tWu9H1Fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+=======
+  "dgSpecHash": "/RBW+Zj7TLMY63crLwBCHtUhpaMCDAZ/1WvT/RMu4uY49v14bjamNf/Z3CzW8PM73CJ36XwwgLTq4vfsiHlPdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
   "expectedPackageFiles": [],
   "logs": [
     {
