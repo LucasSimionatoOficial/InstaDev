@@ -1,18 +1,32 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\caisb\\.nuget\\packages\\": {}
+=======
     "C:\\Users\\10\\.nuget\\packages\\": {}
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+      "projectName": "instadev",
+      "projectPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+      "packagesPath": "C:\\Users\\caisb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\caisb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
       "projectUniqueName": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
       "projectName": "instadev",
       "projectPath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
@@ -21,16 +35,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
       ],
       "originalTargetFrameworks": [
-        "netcoreapp5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "netcoreapp5.0",
+        "netcoreapp3.1": {
           "projectReferences": {}
         }
       },
@@ -41,8 +55,7 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "netcoreapp5.0",
+      "netcoreapp3.1": {
         "imports": [
           "net461",
           "net462",
@@ -61,8 +74,20 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
