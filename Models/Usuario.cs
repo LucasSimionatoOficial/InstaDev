@@ -113,19 +113,27 @@ namespace instadev.Models
                 usuario.DataNascimento = DateTime.Parse(linha.Split(";")[4]);
                 usuario.NumeroSeguindo = int.Parse(linha.Split(";")[5]);
                 string seguindo_ = linha.Split(";")[6];
-                string[] seguindo__ = seguindo_.Split("/");
-                List<int> ListaSeguindo = new List<int>();
-                foreach (var item in seguindo__)
+                if(seguindo_ != "")
                 {
-                    ListaSeguindo.Add(int.Parse(item));
+                    string[] seguindo__ = seguindo_.Split("/");
+                    List<int> ListaSeguindo = new List<int>();
+                    foreach (var item in seguindo__)
+                    {
+                        ListaSeguindo.Add(int.Parse(item));
+                    }
+                    usuario.Seguindo = ListaSeguindo;
                 }
                 usuario.NumeroSeguidores = int.Parse(linha.Split(";")[7]);
                 string seguidores_ = linha.Split(";")[8];
-                string[] seguidores__ = seguindo_.Split("/");
-                List<int> ListaSeguidores = new List<int>();
-                foreach (var item in seguidores__)
+                if(seguidores_ != "")
                 {
-                    ListaSeguidores.Add(int.Parse(item));
+                    string[] seguidores__ = seguindo_.Split("/");
+                    List<int> ListaSeguidores = new List<int>();
+                    foreach (var item in seguidores__)
+                    {
+                        ListaSeguidores.Add(int.Parse(item));
+                    }
+                    usuario.Seguidores = ListaSeguidores;
                 }
                 usuario.Email = linha.Split(";")[9];
                 usuario.Senha = linha.Split(";")[10];

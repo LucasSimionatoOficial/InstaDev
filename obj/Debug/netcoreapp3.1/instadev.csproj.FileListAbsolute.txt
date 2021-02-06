@@ -36,3 +36,4 @@ C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\instadev.pdb
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\instadev.genruntimeconfig.cache
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\instadev.csproj.CopyComplete
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\perfil.cshtml.g.cs
+C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Cadastro.cshtml.g.cs

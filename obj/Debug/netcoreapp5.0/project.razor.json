@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "FilePath": "c:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+=======
+  "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj",
+>>>>>>> 79b865370174567c4d4d92faac68c74669192382
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -16,6 +20,7 @@
   "RootNamespace": "instadev",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\Views\\login\\Index.cshtml",
       "TargetPath": "Views\\login\\Index.cshtml",
       "FileKind": "mvc"
@@ -48,6 +53,45 @@
     {
       "FilePath": "c:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\Views\\Feed\\index.cshtml",
       "TargetPath": "Views\\Feed\\index.cshtml",
+=======
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\EditarPerfil\\Index.cshtml",
+      "TargetPath": "Views\\EditarPerfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\login\\Index.cshtml",
+      "TargetPath": "Views\\login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Feed\\index.cshtml",
+      "TargetPath": "Views\\Feed\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Cadastro\\Cadastro.cshtml",
+      "TargetPath": "Views\\Cadastro\\Cadastro.cshtml",
+>>>>>>> 79b865370174567c4d4d92faac68c74669192382
       "FileKind": "mvc"
     }
   ],

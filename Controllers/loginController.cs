@@ -40,12 +40,21 @@ namespace InstaDev.Controllers
 
 
             // Redirecionamos o usuário logado caso encontrado
-            if(logado != null || logado2 != null)
+            if(logado != null)
             {
                 Console.WriteLine("Estou logado");
                 
                 // Definimos os valores a serem salvos na sessão
                 // HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
+
+                return LocalRedirect("~/");
+            }
+            if(logado2 != null)
+            {
+                Console.WriteLine("Estou logado");
+                
+                // Definimos os valores a serem salvos na sessão
+                // HttpContext.Session.SetString("_UserName", logado2.Split(";")[1]);
 
                 return LocalRedirect("~/");
             }

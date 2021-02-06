@@ -1,16 +1,7 @@
 @{
     ViewData["Title"] = "Perfil";
-}
-
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Perfil</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+}   
+    <link rel="stylesheet" href="~/css/stylePerfil.css"/>
         <header class="header">
             <div class="menu">
                 <ul>
@@ -60,22 +51,24 @@
         </div>
         <section class="posts">
             <section class="area">
-                <div class="post-card">
-                    <img src="img/Rectangle 4imgGrande.png" alt="Post img">
+                @foreach (var Publicacao in ViewBag.ListaPubs)
+                {
+                    <div class="post-card">
+                    <img src="~/img/@Publicacao.Imagem" alt="Post img">
                     <div class="coment-part">
                         <div class="perfil-coment">
                             <img src="img/thank-you 4perfilMedio.png" alt="Perfil">
                             <div class="nom">
                                 <h3>Marcos Jeeves</h3>
                                 <p>Rio de Janeiro, Brazil</p> 
-                            </div>
+                            </div>7
                         </div>
                         <div class="icons-coment">
                             <a href="#"><img src="img/Vector (1).png" alt="Heart"></a>
                             <a href="#"><img src="img/Vectorchat.png" alt="Chat"></a>
                         </div>
                         <div class="curtida">
-                            <p>1954 curtidas</p>
+                            <p> @Publicacao.NumeroLikes curtidas</p>
                         </div>
                         <div class="coments">
                             <div class="chat1">
@@ -105,96 +98,6 @@
                     </div>
                 </div>
                 <div class="espaco"></div>
-                <div class="post-card">
-                    <img src="img/Rectangle 4imgGrande.png" alt="Post img">
-                    <div class="coment-part">
-                        <div class="perfil-coment">
-                            <img src="img/thank-you 4perfilMedio.png" alt="Perfil">
-                            <div class="nom">
-                                <h3>Marcos Jeeves</h3>
-                                <p>Rio de Janeiro, Brazil</p> 
-                            </div>
-                        </div>
-                        <div class="icons-coment">
-                            <a href="#"><img src="img/Vector (1).png" alt="Heart"></a>
-                            <a href="#"><img src="img/Vectorchat.png" alt="Chat"></a>
-                        </div>
-                        <div class="curtida">
-                            <p>1954 curtidas</p>
-                        </div>
-                        <div class="coments">
-                            <div class="chat1">
-                                <h3>fausto_silva</h3>
-                                <p>Esse cara é fera bixo!!!</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat2">
-                                <h3>yes_baby</h3>
-                                <p>thank you</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat3">
-                                <h3>adriano_stark</h3>
-                                <p>Quando eu adormecer, vou sonhar com você. <br> É sempre você. </p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat4">
-                                <h3>yes_baby</h3>
-                                <p>Yes baby!!</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="mais-coments">
-                                <a href="#">Ver todos os 585 comentários</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="espaco"></div>
-                <div class="post-card">
-                    <img src="img/Rectangle 4imgGrande.png" alt="Post img">
-                    <div class="coment-part">
-                        <div class="perfil-coment">
-                            <img src="img/thank-you 4perfilMedio.png" alt="Perfil">
-                            <div class="nom">
-                                <h3>Marcos Jeeves</h3>
-                                <p>Rio de Janeiro, Brazil</p> 
-                            </div>
-                        </div>
-                        <div class="icons-coment">
-                            <a href="#"><img src="img/Vector (1).png" alt="Heart"></a>
-                            <a href="#"><img src="img/Vectorchat.png" alt="Chat"></a>
-                        </div>
-                        <div class="curtida">
-                            <p>1954 curtidas</p>
-                        </div>
-                        <div class="coments">
-                            <div class="chat1">
-                                <h3>fausto_silva</h3>
-                                <p>Esse cara é fera bixo!!!</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat2">
-                                <h3>yes_baby</h3>
-                                <p>thank you</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat3">
-                                <h3>adriano_stark</h3>
-                                <p>Quando eu adormecer, vou sonhar com você. <br> É sempre você. </p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="chat4">
-                                <h3>yes_baby</h3>
-                                <p>Yes baby!!</p>
-                                <a href="#"><img src="img/Vectorsmall heart.png" alt="Heart"></a>
-                            </div>
-                            <div class="mais-coments">
-                                <a href="#">Ver todos os 585 comentários</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
             </section>
         </section>
-    </body>
-</html>
