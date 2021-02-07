@@ -50,22 +50,31 @@ body{
 
 main{
     width: 100%;
-    height: 43.75em;
+    height: auto;
+/*     margin: auto; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#EditarImagem{
+    display: none;
+}
+
 .container{
-    width: 53%;
+    width: 60%;
     height: 100%;
     background-color: blueviolet;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.lados{
+    width: 100%;
+    height: 42em;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#EditarPerfil{
-    display: none;
 }
 
 .esquerdo{
