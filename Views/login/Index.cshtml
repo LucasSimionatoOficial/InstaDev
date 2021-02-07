@@ -1,49 +1,40 @@
-    <main>
-        <div class="retangulo1">
-            <div class="login">
+@{
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/styleLogin.css">
 
-                <div class="instadev">
-                    <img src="img/Instadev.png" alt="slogan">
-                </div>
-                <form method="POST" action='@Url.Action("Logar")' enctype="multipart/form-data">
-                    <div class="blocos">
-                        <input type="text" name="Email" placeholder="Email ou Nome de Usuario">
-                        <input type="text" name="Senha" placeholder="Senha">
-                    </div>
-                    
-                    <div class="entrar">
-                        @* asp-controller="meuController"  asp-action="Ação" *@
-                        <button type="submit">Entrar</button>
-                    </div>  
-                </form>
+<div class="retangulo1">
+    <div class="instadev">
+        <img src="~/img/Instadev.svg" alt="">
+    </div>
+    <form method="POST" action='@Url.Action("Logar")' enctype="multipart/form-data">
+        <input type="text" name="Email" placeholder="Email ou Nome de Usuario" required>
+        <input type="password" name="Senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+        <div class="erro">@TempData.Peek("Mensagem")</div>
+    </form>
 
-                <div class="OU"></div>
-                    <a href="#">OU</a>
-                </div>
+    <div class="lines">
+        <div class="line"></div>
+        <p>OU</p>
+        <div class="line"></div>
+    </div>
 
-                <div class="esqueceuasenha">
-                    <a href="#">Esqueceu a Senha ?</a>
-                </div>
-            </div>
-        </div> 
-            <div class="retangulo2"></div>    
-                <div class="Semconta">
-                    <a href="#">Não tem uma conta?Cadastre-se</a>
-                </div>
-            </div>
+        <div class="esqueceuasenha">
+            <a href="#">Esqueceu a Senha ?</a>
+        </div>
+</div> 
+<div class="retangulo2">   
+    <div>
+        <p>Não tem uma conta? <a asp-area="" asp-controller="Cadastro" asp-action="Index">Cadastre-se</a></p>
         
-            <div class="aplicativos">
-                <p>Obtenha o aplicativo.</p>
-             </div>        
-                
-                    <div class="app">
-                        <img src="img/app_store 1.png" alt="App_store">
-                    </div>
+    </div>
+</div>
 
-                    <div class="play">
-                        <img src="img/google_play 1.png" alt="google_play">
-                    </div>
-           
-
-
-    </main>
+<div class="retangulo3">
+    <p>Obtenha o aplicativo.</p>
+    <div>
+        <img src="~/img/app_store 1.svg" alt="App_store">
+        <img src="~/img/google_play 1.svg" alt="google_play">
+    </div>
+</div>

@@ -15613,8 +15613,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\login\\Index.cshtml",
-      "TargetPath": "Views\\login\\Index.cshtml",
+      "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

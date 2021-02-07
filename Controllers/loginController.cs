@@ -11,6 +11,8 @@ namespace InstaDev.Controllers
         // Comentario novoComentario = new Comentario(); // -> instanciar o objeto novoComentario
 
         Usuario usuarioModel = new Usuario();
+        [TempData]
+        public string Mensagem { get; set; }
 
         public IActionResult Index()
         {
@@ -58,6 +60,8 @@ namespace InstaDev.Controllers
 
                 return LocalRedirect("~/Feed");
             }
+
+            Mensagem = "Dados incorretos, tente novamente";
 
             Console.WriteLine("Não estou logado");
             

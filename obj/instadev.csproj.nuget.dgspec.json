@@ -1,46 +1,30 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj": {}
+    "C:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj": {
+    "C:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj",
         "projectName": "instadev",
-        "projectPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\instadev.csproj",
-        "packagesPath": "C:\\Users\\caisb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caisb\\OneDrive\\Desktop\\InstaDev\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\caisb\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
-        "projectName": "instadev",
-        "projectPath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
-        "packagesPath": "C:\\Users\\10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\10\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp5.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
             "projectReferences": {}
           }
         },
@@ -51,7 +35,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
           "imports": [
             "net461",
             "net462",
@@ -70,11 +55,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> 1aae575591df72a28fb16fc492accbc64e196fc1
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

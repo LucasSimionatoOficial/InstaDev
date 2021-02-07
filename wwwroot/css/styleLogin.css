@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+:root{
+    background: #E5E5E5;
+    --inputBackgroundColor: #FAFAFA;
+    --white: #FFFFFF;
+    --inputColor: #AFAFAF;
+    --inputBorder: #DCDCDC;
+    --buttonBackgroundColor: #2686CC;
+    --lines: #CBCBCB;
+    --fonteCinza: #909090;
+    --fontePreta: #353535;
+}
+
+.retangulo1{
+    width: 342px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: var(--white);
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.instadev{
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo1 img{
+    width: 165px;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 267px;
+    height: 35px;
+    background-color: var(--inputBackgroundColor);
+    border: 1px solid var(--inputBorder);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 9px;
+    font-size: 11px;
+}
+
+button{
+    width: 267px;
+    height: 30px;
+    background-color: var(--buttonBackgroundColor);
+    border: none;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.erro{
+    color: #fc1e8b;
+}
+
+.lines{
+    width: 267px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    width: 109px;
+    height: 1px;
+    background-color: var(--lines);
+}
+
+.retangulo2{
+    width: 342px;
+    height: 75px;
+    margin: 9px auto;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo3{
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.retangulo3 p{
+    margin: 18px 0 21px 0;
+    text-align: center;
+}
+
+.retangulo3 div{
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo3 img{
+    margin: 0 2.5px;
+    height: 39px;
+}

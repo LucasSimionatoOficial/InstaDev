@@ -16,10 +16,11 @@ namespace instadev.Controllers
         public IActionResult Index()
         {
             ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
-            if(ViewBag.NomeUsuario == null)//Depende do login
+            if(ViewBag.NomeUsuario == null)
             {
                 return LocalRedirect("~/Login");
             }
+            ViewBag.ImagemNomeUsuario = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName")).Foto;
             List<Usuario> usuarios = usuarioModel.ListarUsuarios();
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
             List<Comentario> comentarios = comentarioModel.ListarComentarios();

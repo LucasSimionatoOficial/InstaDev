@@ -33,6 +33,7 @@
     border-bottom: 1px solid;
     border-color: rgb(238, 237, 237);
     margin-bottom: 38px;
+    position: sticky;
 }
 .menu{
     width: 935px;

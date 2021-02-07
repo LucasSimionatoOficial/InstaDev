@@ -11,11 +11,11 @@
                         <input type="search" placeholder="Pesquisar">
                     </form>
                     <div class="botoes">
-                        <a href="#"><img src="img/Vector.png" alt="Home"></a>
-                        <a href="#"><img src="img/plane 1.png" alt="Plane"></a>
-                        <a href="#"><img src="img/compass 1.png" alt="Compass"></a>
-                        <a href="#"><img src="img/Vector (1).png" alt="Heart"></a>
-                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="~/img/Vector.png" alt="Home"></a>
+                        <a href="#"><img src="~/img/plane 1.png" alt="Plane"></a>
+                        <a href="#"><img src="~/img/compass 1.png" alt="Compass"></a>
+                        <a href="#"><img src="~/img/Vector (1).png" alt="Heart"></a>
+                        <a href="#"><img src="~/img/Publicacao/@ViewBag.ImagemNomeUsuario" alt=""></a>
                     </div>
                 </ul>
             </div>
@@ -33,7 +33,7 @@
                 }
             </div>
             <div id="profilefeed">
-                <img src="./images/thank-you 2.png" alt="" class="pimg">
+                <img src="~/img/Publicacao/@ViewBag.ImagemNomeUsuario" alt="" class="pimg">
                 <div>
                     @foreach (var item in ViewBag.NomeUsuario)
                     {
@@ -45,7 +45,7 @@
         </div>
         <div id="post">
             <div>
-                <img src="./images/thank-you 2.png" alt=""> @*depende do cadastro*@
+                <img src="~/img/Publicacao/@ViewBag.ImagemNomeUsuario" alt=""> @*depende do cadastro*@
                 <h1>Postar</h1>
             </div>
             <form method="POST" action='@Url.Action("CadastrarPublicacao")' enctype="multipart/form-data">

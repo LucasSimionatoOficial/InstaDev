@@ -33,7 +33,7 @@ namespace instadev.Controllers
             Usuario novoUsuario = new Usuario();
             novoUsuario.IdUsuario           = idUsuario_;
             novoUsuario.Nome                = form["NomeCompleto"];
-            novoUsuario.Foto                = "";
+            novoUsuario.Foto                = "User";
             novoUsuario.DataNascimento      = DateTime.Parse("01/01/2020");
             novoUsuario.NomeUsuario         = form["NomeUsuario"];
             novoUsuario.Email               = form["Email"];

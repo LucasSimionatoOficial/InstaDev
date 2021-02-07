@@ -11,11 +11,7 @@
       "NET5_0",
       "NETCOREAPP"
     ],
-<<<<<<< HEAD:bin/Debug/netcoreapp3.1/instadev.deps.json
-    "languageVersion": "8.0",
-=======
     "languageVersion": "9.0",
->>>>>>> 79b865370174567c4d4d92faac68c74669192382:bin/Debug/netcoreapp5.0/instadev.deps.json
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,

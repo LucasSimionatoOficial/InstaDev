@@ -120,3 +120,4 @@ C:\Users\10\Desktop\Nova pasta (2)\instadev\obj\Debug\netcoreapp5.0\ref\instadev
 C:\Users\10\Desktop\Nova pasta (2)\instadev\obj\Debug\netcoreapp5.0\instadev.pdb
 C:\Users\10\Desktop\Nova pasta (2)\instadev\obj\Debug\netcoreapp5.0\instadev.genruntimeconfig.cache
 C:\Users\10\Desktop\Nova pasta (2)\instadev\obj\Debug\netcoreapp5.0\instadev.csproj.CopyComplete
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp5.0\Razor\Views\Perfil\perfil.cshtml.g.cs

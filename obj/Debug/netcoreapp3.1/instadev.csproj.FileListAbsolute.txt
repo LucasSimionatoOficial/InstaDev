@@ -37,3 +37,42 @@ C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\instadev.genrun
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\instadev.csproj.CopyComplete
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\perfil.cshtml.g.cs
 C:\Users\caisb\OneDrive\Desktop\InstaDev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\Cadastro.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.exe
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.deps.json
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.runtimeconfig.json
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.runtimeconfig.dev.json
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.dll
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.pdb
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.Views.dll
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\bin\Debug\netcoreapp3.1\instadev.Views.pdb
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.csprojAssemblyReference.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.AssemblyInfo.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.RazorAssemblyInfo.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.RazorAssemblyInfo.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\staticwebassets\instadev.StaticWebAssets.Manifest.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\staticwebassets\instadev.StaticWebAssets.xml
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\scopedcss\bundle\instadev.styles.css
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.TagHelpers.input.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.TagHelpers.output.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.RazorCoreGenerate.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Cadastro\index.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\EditarPerfil\Index.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Feed\index.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Perfil\perfil.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.RazorTargetAssemblyInfo.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.RazorTargetAssemblyInfo.cs
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.Views.pdb
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.dll
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.pdb
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.genruntimeconfig.cache
+C:\Users\User\Documents\Desenvolvimento web senai\Sprint 4 - Backend 2 - POO\instadev\obj\Debug\netcoreapp3.1\instadev.csproj.CopyComplete
