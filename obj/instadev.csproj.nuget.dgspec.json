@@ -23,8 +23,13 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+<<<<<<< HEAD
           "net5.0": {
             "targetAlias": "netcoreapp5.0",
+=======
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+>>>>>>> 9c143fbb4b580d08631678b9fd292867746282ca
             "projectReferences": {}
           }
         },
@@ -35,8 +40,13 @@
         }
       },
       "frameworks": {
+<<<<<<< HEAD
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
+=======
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+>>>>>>> 9c143fbb4b580d08631678b9fd292867746282ca
           "imports": [
             "net461",
             "net462",
@@ -55,7 +65,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+>>>>>>> 9c143fbb4b580d08631678b9fd292867746282ca
         }
       }
     }

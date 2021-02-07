@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\instadev.csproj",
+  "FilePath": "c:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15601,6 +15601,7 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "instadev",
+<<<<<<< HEAD
   "Documents": [
     {
       "FilePath": "c:\\Users\\User\\Documents\\Desenvolvimento web senai\\Sprint 4 - Backend 2 - POO\\instadev\\Views\\EditarPerfil\\Index.cshtml",
@@ -15648,5 +15649,8 @@
       "FileKind": "mvc"
     }
   ],
+=======
+  "Documents": [],
+>>>>>>> 9c143fbb4b580d08631678b9fd292867746282ca
   "SerializationFormat": "0.2"
 }
