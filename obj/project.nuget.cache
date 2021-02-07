@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/RBW+Zj7TLMY63crLwBCHtUhpaMCDAZ/1WvT/RMu4uY49v14bjamNf/Z3CzW8PM73CJ36XwwgLTq4vfsiHlPdA==",
+  "dgSpecHash": "YXjVLKsGL314rpTfkIKrutAq1digr5gqsTL9GkouODx1PGNumSCC/cbB8fFUHjPZgKf3sy/9xMmg6DFWKa5a1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\instadev.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\10\\Desktop\\Nova pasta (2)\\instadev\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
