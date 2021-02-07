@@ -15,11 +15,12 @@ namespace instadev.Controllers
         Comentario comentarioModel = new Comentario();
         public IActionResult Index()
         {
-            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
-            if(ViewBag.NomeUsuario == null)
+            string login = HttpContext.Session.GetString("_UserName");
+            if(login == null)
             {
                 return LocalRedirect("~/Login");
             }
+            ViewBag.NomeUsuario = usuarioModel.ListarUsuarios().FindAll(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName"));
             ViewBag.ImagemNomeUsuario = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName")).Foto;
             List<Usuario> usuarios = usuarioModel.ListarUsuarios();
             List<Publicacao> publicacoes = publicacaoModel.ListarPublicacoes();
@@ -37,10 +38,10 @@ namespace instadev.Controllers
                 string PublicacaoImagem = item.Imagem;
                 string PublicacaoLegenda = item.Legenda;
                 int PublicacaoNumeroLikes = item.NumeroLikes;
-                string UsuarioLike = "~/wwwroot/img/Feed/heart.svg";
+                string UsuarioLike = "heart.svg";
                 if(item.Likes.Exists(x => x == idUsuario))
                 {
-                    UsuarioLike = "~/wwwroot/img/Feed/red_heart.svg";
+                    UsuarioLike = "red_heart.svg";
                 }
                 string ComentarioMensagem = "";
                 string ComentarioUsuario = "";
@@ -104,20 +105,17 @@ namespace instadev.Controllers
             novaPublicacao.Legenda = form["Legenda"];
             novaPublicacao.IdUsuario = idUsuario; //Login
             novaPublicacao.NumeroLikes = 0;
-            //temporario
             List<int> likes = new List<int>();
-            likes.Add(1);
             novaPublicacao.Likes = likes;
-            //temporario
             publicacaoModel.CriarPublicacao(novaPublicacao);
             return LocalRedirect("~/Feed");
         }
-        /* [Route("Like")]
-        public IActionResult Like()
-        {
-            // publicacaoModel.Curtir( , );//idUsuarioatual, autor
-            return LocalRedirect("~/Feed");
-        } */
+        // [Route("Curtir")]
+        // public IActionResult Curtir(IFormCollection form)
+        // {
+        //     publicacaoModel.Curtir(usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_Username")).IdUsuario, int.Parse(form["IdPublicacao"]));//idUsuarioatual, autor
+        //     return LocalRedirect("~/Feed");
+        // }
         
         [Route("Comentar")]
         public IActionResult Comentar(IFormCollection form)

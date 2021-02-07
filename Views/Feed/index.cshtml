@@ -68,9 +68,14 @@
                 <img src='~/img/Publicacao/@publicacao.Split(";")[4]' alt="" class="publicationImage">
                 <div class="publicationBottom">
                     <div class="likeComment">
-                        @* <a asp-controller="Feed" asp-action="Like">
-                            <img src="./imagens/hearth.svg" alt="">
-                        </a> *@
+                        @* <form method="POST" action='Url.Action("Curtir")' enctype="multipart/form-data">
+                            <button type="submit">
+                                <select name="IdPublicacao" id="" name="IdPublicacao">
+                                    <option value='~/img/Feed/@publicacao.Split(";")[3]'></option>
+                                </select>
+                                <img src='@publicacao.Split(";")[7]' alt="">
+                            </button>
+                        </form> *@
                         <form method="POST" action='@Url.Action("Comentar")' enctype="multipart/form-data">
                         <button type="submit" class="buttonComment">
                             <select name="idPublicacao" id="">
@@ -83,6 +88,7 @@
                         <input type="text" class="publicationInput" placeholder="Comentar..." name="mensagem">
                         </form>                    
                     </div>
+                    @* <h4 class="curtidas">@publicacao.Split(";")[6] curtidas</h4> *@
                     <div class="comments">
                             <h5>@publicacao.Split(";")[1]</h5>
                             <h6>@publicacao.Split(";")[5]</h6>

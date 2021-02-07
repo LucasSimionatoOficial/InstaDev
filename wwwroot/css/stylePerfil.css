@@ -201,81 +201,17 @@ h4{
     height: 227px;
     /* background-color: teal; */
     padding-top: 25px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    overflow: hidden;
 }
-.chat1{
-    display: flex;
-}
-.chat1 h3{
+.coments h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-    padding-left: 50px;
 }
-.chat1 p{
+.coments p{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    padding-left: 20px;
-}
-.chat1 img{
-    padding-left: 200px;
-    height: 15px;
-}
-.chat2{
-    display: flex;
-    padding-top: 10px;
-}
-.chat2 h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    padding-left: 50px;
-}
-.chat2 p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    padding-left: 20px;
-}
-.chat2 img{
-    padding-left: 285px;
-    height: 15px;
-}
-.chat3{
-    display: flex;
-    padding-top: 10px;
-}
-.chat3 h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    padding-left: 50px;
-}
-.chat3 p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    padding-left: 20px;
-}
-.chat3 img{
-    padding-left: 55px;
-    height: 15px;
-}
-.chat4{
-    display: flex;
-    padding-top: 10px;
-}
-.chat4 h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    padding-left: 50px;
-}
-.chat4 p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    padding-left: 20px;
-}
-.chat4 img{
-    padding-left: 283px;
-    height: 15px;
-}
-.mais-coments{
-    padding-left: 50px;
-    padding-top: 45px;
 }
 .mais-coments a{
     font-family: 'Roboto', sans-serif;

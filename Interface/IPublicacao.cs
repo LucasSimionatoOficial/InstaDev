@@ -9,6 +9,6 @@ namespace instadev.Interface
         List<Publicacao> ListarPublicacoes();
         void EditarPublicacao(Publicacao publicacao);
         void ExcluirPublicacao(int id);
-        void Curtir(int IdUsuarioAtual, int idAutor, int IdPublicacao);
+        void Curtir(int IdUsuarioAtual, int IdPublicacao);
     }
 }

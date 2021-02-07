@@ -54,7 +54,7 @@ namespace instadev.Models
             File.AppendAllLines(PATH, linhas);
         }
 
-        public void Curtir(int IdUsuarioAtual, int idAutor, int IdPublicacao)
+        public void Curtir(int IdUsuarioAtual, int IdPublicacao)
         {
             List<Publicacao> publicacoes = ListarPublicacoes();
             if (publicacoes.Find(x => x.IdPublicacao == IdPublicacao).Likes.Exists(x => x == IdUsuarioAtual))

@@ -265,6 +265,11 @@ select{
     font-weight: 400;
 }
 
+.curtidas{
+    font-size: 13px;
+    font-weight: 400;
+}
+
 .publicationBottom{
     margin: 13px 0 16px 16px;
 }

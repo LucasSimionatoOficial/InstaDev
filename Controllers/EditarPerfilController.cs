@@ -3,6 +3,7 @@ using System.IO;
 using instadev.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace instadev.Controllers
 {
@@ -21,38 +22,25 @@ namespace instadev.Controllers
             return View();
         }
 
-        // http://localhost:5001/Editar/1
-        [Route("Info/{id}")]
-        public IActionResult Editar(int id, IFormCollection form)
-        {     
-            Usuario usuarioEdit = new Usuario();
-
-            usuarioEdit.Nome = form[("Nome")];
-            usuarioEdit.NomeUsuario = form[("NomeUsuario")];
-            usuarioEdit.Senha = form[("Senha")];
-            usuarioEdit.IdUsuario = usuarioModel.ListarUsuarios().Find(x => x.NomeUsuario == HttpContext.Session.GetString("_UserName")).IdUsuario;
-
-            usuarioModel.EditarUsuario(usuarioEdit);
-            ViewBag.Usuarios = usuarioModel.ListarUsuarios();
-
-            return LocalRedirect("~/Editar");
-        }
-
-        // http://localhost:5001/Deletar/1
-        [Route("Deletar/{id}")]
-        public IActionResult DeletarUsuario(int id)
-        {
-            usuarioModel.DeletarUsuario(id);
-
-            ViewBag.Usuarios = usuarioModel.ListarUsuarios();
-
-            return LocalRedirect("~/Editar");
-        }
-
-        [Route("Imagem")]
-        public IActionResult EditarImagem(IFormCollection form)
+        [Route("EditarPerfil")]
+        public IActionResult EditarPerfil(IFormCollection form)
         {
             Usuario novoUsuario = new Usuario();
+
+            if(form["nome"] != "")
+            {
+                novoUsuario.Nome = form["nome"];
+            }
+            if(form["nomeUsuario"] != "")
+            {
+                novoUsuario.NomeUsuario = form["nomeUsuario"];
+            }
+            if(form["email"]!= "")
+            {
+                novoUsuario.Email = form["email"];
+            }
+            novoUsuario.IdUsuario = int.Parse(form["id"]);
+
 
             //Veirificamos se o usuário anexou algum arquivo
             if ( form.Files.Count > 0 )
@@ -80,14 +68,21 @@ namespace instadev.Controllers
                 //Atribuímos a imagem na imagem
                 novoUsuario.Foto = file.FileName;
             }
-            else
-            {
-                novoUsuario.Foto = "padrao.png";
-            }
+            usuarioModel.EditarUsuario(novoUsuario);
 
             return LocalRedirect("~/Editar");
         }
         
+        // http://localhost:5001/Deletar/1
+        [Route("Deletar/{id}")]
+        public IActionResult DeletarUsuario(int id)
+        {
+            usuarioModel.DeletarUsuario(id);
+
+            ViewBag.Usuarios = usuarioModel.ListarUsuarios();
+
+            return LocalRedirect("~/Login");
+        }
         
     }
 }
