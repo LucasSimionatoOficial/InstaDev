@@ -21,45 +21,50 @@
         </div>
     </header>
 
-<div class="direito">
-    <div class="dados">
-        <div class="info-titulo ">
-            <div class="imagem">
-                <img src="~/img/FotosUsuario/@ViewBag.UsuarioAtual.Foto" alt="Imagem do usuário">
-            </div>
-            <div class="titulos-caixa">
-                <h3>Nome</h3>
-                <h3>Nome de Usuário</h3>
-                <h3>Email</h3>
+<div class="container">
+        <div class="esquerdo">
+            <h2>Editar Perfil</h2>
+        </div>
+        <div class="direito">
+            <div class="dados">
+                <div class="info-titulo ">
+                    <div class="imagem">
+                        <img src="~/img/FotosUsuario/@ViewBag.UsuarioAtual.Foto" alt="Imagem do usuário">
+                    </div>
+                    <div class="titulos-caixa">
+                        <h3>Nome</h3>
+                        <h3>Nome de Usuário</h3>
+                        <h3>Email</h3>
+                    </div>
+                </div>
+                <form method="POST" action='@Url.Action("EditarPerfil")' enctype="multipart/form-data" class="info-alterar">
+                        <div class="nick">
+                            <h3>@ViewBag.UsuarioAtual.NomeUsuario</h3>
+                            <label for="imagem_" id="label_">
+                                Alterar foto de perfil
+                                <input type="file" name="imagem" id="imagem_">
+                            </label>
+                        </div>
+                        <div class="barras">
+                            <input type="text" name="nome">
+                            <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
+                            <p id="margin1">Você pode alterar o seu nome apenas duas vezes a cada 14 dias</p>
+                            <div class="barra-centro">
+                            <input type="text" name="nomeUsuario">
+                            </div>
+                            <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
+                            <p>Informações pessoais <br>
+                                Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
+                            <input type="text" name="email">
+                            <select name="id">
+                                <option value="@ViewBag.UsuarioAtual.IdUsuario"></option>
+                            </select>
+                        </div>
+                        <div class="botao">
+                            <button type="submit">Enviar</button>
+                            <a asp-area="" asp-controller="EditarPerfilController" asp-action="DeletarUsuario" asp-route-id="@ViewBag.UsuarioAtual.IdUsuario">Desativar minha conta definitivamente</a>
+                        </div>
+                </form>
             </div>
         </div>
-        <form method="POST" action='@Url.Action("EditarPerfil")' enctype="multipart/form-data" class="info-alterar">
-                <div class="nick">
-                    <h3>@ViewBag.UsuarioAtual.NomeUsuario</h3>
-                    <label for="imagem_" id="label_">
-                        Alterar foto de perfil
-                        <input type="file" name="imagem" id="imagem_">
-                    </label>
-                </div>
-                <div class="barras">
-                    <input type="text" name="nome">
-                    <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é conhecido: seu nome completo, apelido ou nome comercial.</p>
-                    <p id="margin1">Você pode alterar o seu nome apenas duas vezes a cada 14 dias</p>
-                    <div class="barra-centro">
-                    <input type="text" name="nomeUsuario">
-                    </div>
-                    <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para nascimento_tr por mais 14 dias.</p>
-                    <p>Informações pessoais <br>
-                        Forneça suas informações pessoais, mesmo se a conta for usada para uma empresa, um animal de estimação ou outra coisa. Elas não farão parte do seu perfil público.</p>
-                    <input type="text" name="email">
-                    <select name="id">
-                        <option value="@ViewBag.UsuarioAtual.IdUsuario"></option>
-                    </select>
-                </div>
-                <div class="botao">
-                    <button type="submit">Enviar</button>
-                    <a asp-area="" asp-controller="EditarPerfilController" asp-action="DeletarUsuario" asp-route-id="@ViewBag.UsuarioAtual.IdUsuario">Desativar minha conta definitivamente</a>
-                </div>
-        </form>
-    </div>
 </div>

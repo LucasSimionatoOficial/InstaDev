@@ -67,7 +67,7 @@ main{
 .container{
     width: 60%;
     height: 100%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -83,9 +83,11 @@ main{
 }
 
 .esquerdo{
-    width: 24.5%;
-    height: 80%;
+    width: 215px;
+    height: 610px;
+    margin: 0 auto;
     background-color: #ffffff;
+    margin-top: 24px;
 }
 
 .esquerdo h2{
@@ -99,7 +101,7 @@ main{
 }
 
 .direito{
-    width: 935px;
+    width: 730px;
     height: 610px;
     background-color: #ffffff;
     margin: 0 auto;
